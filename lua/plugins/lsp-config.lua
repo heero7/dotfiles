@@ -33,6 +33,7 @@ return {
                 capabilities = capabilities
             })
 
+            -- JavaScript / TypeScript LSP
             lspconfig.tsserver.setup({
                 capabilities = capabilities
             })

@@ -105,6 +105,7 @@ alias reload="source ~/.zshrc"
 alias vimc="cd ~/.config/nvim/ && nvim"
 alias cde="cd ~/Code"
 alias zrc="cd ~ && nvim .zshrc"
+alias home="cd ~"
 
 # Starship 
 

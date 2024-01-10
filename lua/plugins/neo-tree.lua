@@ -10,8 +10,12 @@ return {
         require("neo-tree").setup({
             filesystem = {
                 filtered_items = {
+                    hide_gitignored = false,
                     always_show = {
-                        ".gitignore"
+                        ".gitignore",
+                        ".eslintrc.cjs",
+                        ".tmux.conf",
+                        ".zshrc"
                     }
                 }
             }
