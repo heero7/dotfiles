@@ -1,4 +1,4 @@
-# Kevin's NeoVim Configuration (2024)
+# Dotfiles 
 
 ## Description 📝
 This repo contains my setup for NeoVim created in 2023. I followed typecraft's tutorial series on YouTube.
@@ -37,3 +37,10 @@ TBD
 - Color Scheme Options: 
     - Tokyo Night
     - Catppuccin
+
+
+## Yabai
+- When installing Yabai, you'll need to start services run the command `yabai --start-service`
+- Then make sure to allow it to run in the background
+
+[Full i3 replacement](https://cbrgm.net/post/2021-05-5-setup-macos/)

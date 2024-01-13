@@ -15,7 +15,9 @@ return {
                         ".gitignore",
                         ".eslintrc.cjs",
                         ".tmux.conf",
-                        ".zshrc"
+                        ".zshrc",
+                        ".gitconfig",
+                        ".yabairc"
                     }
                 }
             }
