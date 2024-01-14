@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Aliases
-alias reload="source ~/.zshrc"
+alias reload="echo Reloading zshrc && source ~/.zshrc"
 alias vimc="cd ~/.config/nvim/ && nvim"
 alias cde="cd ~/Code"
 alias zrc="cd ~ && nvim .zshrc"
