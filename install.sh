@@ -46,9 +46,15 @@ ln -s skhdrc/.skhdrc ~/.skhdrc
 echo "Done linking skhdrc configuration!"
 
 echo "Linking yabai configuration..."
-ln -s yabai/yabairc ~/.yabairc
+if [ -d "${HOME}/.config/yabai" ]
+then
+    echo "[yabai] yabai directory already exists"
+else
+    mkdir "${HOME}/.tmux" 
+    echo "[yabai] Created yabai directory in ${HOME}"
+fi
+ln -s yabai/yabairc ~/.config/yabai/.yabairc
 echo "Done linking yabai configuration!"
-
 
 echo "Linking finished.. resatarting shell.."
 source ~/.zshrc
