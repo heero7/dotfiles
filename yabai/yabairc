@@ -25,6 +25,7 @@ yabai -m config mouse_action2 resize            # Right Click & Drag: [Resize wi
 yabai -m config mouse_drop_action swap
 
 # Applications Yabai shouldn't manage
-# Copy this format yabai -m rule --add app"^" manage=off
-yabai -m rule --add app"^System Settings" manage=off
-yabai -m rule --add app"^Calculator" manage=off
+# Copy this format yabai -m rule --add app"^$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+# yabai -m rule --add app="^Firefox$" manage=off
