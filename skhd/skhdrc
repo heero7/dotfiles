@@ -1,0 +1,46 @@
+# skhd configuration
+
+# Change window focus within a space
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# Modify the layout
+shift + alt - r : yabai -m space --rotate 270                           # Moves windows clockwise
+shift + alt - y : yabai -m space --mirror y-axis                        # Flips the layout along the y axis
+shift + alt - x : yabai -m space --mirror x-axis                        # Flips the layout along the x axis
+shift + alt - t : yabai -m space --toggle float --grid 4:4:1:1:2:2      # Removes window from tiling
+
+
+# Modify window size
+shift + alt - m : yabai -m window --toggle zoom-fullscreen              # Forces focused winodw to max
+shift + alt - e : yabai -m space --balance                              # Puts window back to orginal size
+
+shift + alt - j : yabai -m window --swap south                          # Moves window down
+shift + alt - k : yabai -m window --swap north                          # Moves window up
+shift + alt - h : yabai -m window --swap west                           # Moves window left
+shift + alt - l : yabai -m window --swap east                           # Moves window right
+
+# todo: Still don't understand this (remove?)
+shift + alt - j : yabai -m window --warp south
+shift + alt - k : yabai -m window --warp north
+shift + alt - h : yabai -m window --warp west
+shift + alt - l : yabai -m window --warp east
+
+# Moving windows
+shift + alt - p : yabai -m window --space prev;                         # Move window to previous space
+shift + alt - n : yabai -m window --space next;                         # Move window to next space
+
+shift + alt - 1 : yabai -m window --space 1;                            # Move window to space n = 1
+shift + alt - 2 : yabai -m window --space 2;                            # Move window to space n = 2
+shift + alt - 3 : yabai -m window --space 3;                            # Move window to space n = 3
+shift + alt - 4 : yabai -m window --space 4;                            # Move window to space n = 4
+shift + alt - 5 : yabai -m window --space 5;                            # Move window to space n = 5
+shift + alt - 6 : yabai -m window --space 6;                            # Move window to space n = 6
+shift + alt - 7 : yabai -m window --space 7;                            # Move window to space n = 7
+
+# Start / Stop Yabai
+ctrl + alt - s : yabai --start-service                                  # Starts Yabai
+ctrl + alt - j : yabai --stop-service                                   # Stops Yabai
+ctrl + alt - r : yabai --restart-service                                # Restarts Yabai

@@ -39,21 +39,26 @@ ln -s tmux/.tmux.conf ~/.tmux.conf
 ln -s tmux/.tmux/plugins ~/.tmux/plugins
 echo "Done linking tmux configuration!"
 
-echo "Linking starship"
-
-echo "Linking skhdrc configuration..."
-ln -s skhdrc/.skhdrc ~/.skhdrc
-echo "Done linking skhdrc configuration!"
+echo "Linking skhd configuration..."
+if [ -d "${HOME}/.config/skhd" ]
+then
+    echo "[skhd] skhd directory already exists"
+else
+    mkdir "${HOME}/.config/skhd" 
+    echo "[skhd] Created skhd directory in ${HOME}"
+fi
+ln -s skhd/skhdrc ~/.config/skhd/skhdrc
+echo "Done linking skhd configuration!"
 
 echo "Linking yabai configuration..."
 if [ -d "${HOME}/.config/yabai" ]
 then
     echo "[yabai] yabai directory already exists"
 else
-    mkdir "${HOME}/.tmux" 
+    mkdir "${HOME}/.config/yabai" 
     echo "[yabai] Created yabai directory in ${HOME}"
 fi
-ln -s yabai/yabairc ~/.config/yabai/.yabairc
+ln -s yabai/yabairc ~/.config/yabai/yabairc
 echo "Done linking yabai configuration!"
 
 echo "Linking finished.. resatarting shell.."
