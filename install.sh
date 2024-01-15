@@ -39,27 +39,33 @@ ln -s tmux/.tmux.conf ~/.tmux.conf
 ln -s tmux/.tmux/plugins ~/.tmux/plugins
 echo "Done linking tmux configuration!"
 
-echo "Linking skhd configuration..."
-if [ -d "${HOME}/.config/skhd" ]
+# OSX Specific Configuration (i3 Replacement [yabai + skhd])
+if [[ "$OSTYPE" == "darwin"* ]]; 
 then
-    echo "[skhd] skhd directory already exists"
-else
-    mkdir "${HOME}/.config/skhd" 
-    echo "[skhd] Created skhd directory in ${HOME}"
-fi
-ln -s skhd/skhdrc ~/.config/skhd/skhdrc
-echo "Done linking skhd configuration!"
+    echo "🍎 OSX Detected.. doing install for OSX.."
 
-echo "Linking yabai configuration..."
-if [ -d "${HOME}/.config/yabai" ]
-then
-    echo "[yabai] yabai directory already exists"
-else
-    mkdir "${HOME}/.config/yabai" 
-    echo "[yabai] Created yabai directory in ${HOME}"
+    echo "Linking skhd configuration..."
+    if [ -d "${HOME}/.config/skhd" ]
+    then
+        echo "[skhd] skhd directory already exists"
+    else
+        mkdir "${HOME}/.config/skhd" 
+        echo "[skhd] Created skhd directory in ${HOME}"
+    fi
+    ln -s skhd/skhdrc ~/.config/skhd/skhdrc
+    echo "Done linking skhd configuration!"
+
+    echo "Linking yabai configuration..."
+    if [ -d "${HOME}/.config/yabai" ]
+    then
+        echo "[yabai] yabai directory already exists"
+    else
+        mkdir "${HOME}/.config/yabai" 
+        echo "[yabai] Created yabai directory in ${HOME}"
+    fi
+    ln -s yabai/yabairc ~/.config/yabai/yabairc
+    echo "Done linking yabai configuration!"
 fi
-ln -s yabai/yabairc ~/.config/yabai/yabairc
-echo "Done linking yabai configuration!"
 
 echo "Linking finished.. resatarting shell.."
 source ~/.zshrc
