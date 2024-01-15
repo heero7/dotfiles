@@ -17,16 +17,17 @@ shift + alt - t : yabai -m space --toggle float --grid 4:4:1:1:2:2      # Remove
 shift + alt - m : yabai -m window --toggle zoom-fullscreen              # Forces focused winodw to max
 shift + alt - e : yabai -m space --balance                              # Puts window back to orginal size
 
-shift + alt - j : yabai -m window --swap south                          # Moves window down
-shift + alt - k : yabai -m window --swap north                          # Moves window up
-shift + alt - h : yabai -m window --swap west                           # Moves window left
-shift + alt - l : yabai -m window --swap east                           # Moves window right
+shift + alt - j : yabai -m window --swap south                          # Swaps window down
+shift + alt - k : yabai -m window --swap north                          # Swaps window up
+shift + alt - h : yabai -m window --swap west                           # Swaps window left
+shift + alt - l : yabai -m window --swap east                           # Swaps window right
 
 # todo: Still don't understand this (remove?)
-shift + alt - j : yabai -m window --warp south
-shift + alt - k : yabai -m window --warp north
-shift + alt - h : yabai -m window --warp west
-shift + alt - l : yabai -m window --warp east
+# Moves window and splits
+ctrl + alt - j : yabai -m window --warp south
+ctrl + alt - k : yabai -m window --warp north
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - l : yabai -m window --warp east
 
 # Moving windows
 shift + alt - p : yabai -m window --space prev;                         # Move window to previous space
