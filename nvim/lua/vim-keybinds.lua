@@ -3,6 +3,7 @@
 vim.g.mapleader = " "                                           -- Leader key = <SPACE>
 vim.keymap.set("i", "jk", "<ESC>")                              -- Exit using 'jk' in insert mode
 vim.keymap.set("n", "<leader>n", ":nohl<CR>")                   -- Clear highlights from search
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
 --vim.keymap.set("n", "x", '"_x"')                              -- Does not keep single char deletes in registry (slows down rapid tap. Could speed up with timout)
 

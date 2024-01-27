@@ -10,7 +10,9 @@ return {
         require("neo-tree").setup({
             filesystem = {
                 filtered_items = {
+                    visible = true,
                     hide_gitignored = false,
+                    hide_dotfiles = false,
                     always_show = {
                         ".gitignore",
                         ".eslintrc.cjs",
@@ -18,6 +20,9 @@ return {
                         ".zshrc",
                         ".gitconfig",
                         ".yabairc"
+                    },
+                    hide_by_name = {
+                        "node_modules"
                     }
                 }
             }
