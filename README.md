@@ -23,3 +23,6 @@ Create a file called `.stowrc`
 ```
 --target=/usr/local/{userName}
 ```
+
+## Reference
+[A Quick Tutorial of dotfiles & GNU Stow](https://www.youtube.com/watch?v=y6XCebnB9gs)
