@@ -24,6 +24,11 @@ Create a file called `.stowrc`
 --target=/usr/local/{userName}
 ```
 
+## Updating the dotfiles
+1. Navigate to the root directory
+2. Run `stow .`
+3. Check that the files are symlink'ed in the correct directories
+
 ## Reference
 [A Quick Tutorial of dotfiles & GNU Stow](https://www.youtube.com/watch?v=y6XCebnB9gs)
 
@@ -31,3 +36,9 @@ Create a file called `.stowrc`
 
 - nvim 
 - tmux
+- alacritty
+    - to install the themes, go to the alacritty directory and run
+    - `git clone git@github.com:alacritty/alacritty-theme.git themes`
+
+*I recently switched from iterm2 to Alacritty. I had issues with the colors. Don't forget
+to restart tmux other wise the config won't pick up!*
