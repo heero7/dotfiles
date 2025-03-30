@@ -8,7 +8,9 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'tokyonight_storm'
+-- config.color_scheme = 'tokyonight_storm'
+
+config.font_size = 24
 
 -- On Windows this should be enabled. But Mac and Linux do not need
 -- Allows a tmux like tabbing like in Windows
