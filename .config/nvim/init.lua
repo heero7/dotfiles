@@ -1,6 +1,8 @@
 require "core/options"
 require "core/keymaps"
 
+
+
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
@@ -12,5 +14,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    require "plugins/colorscheme"
+    require "plugins/colorscheme",
+    require "plugins/neotree",
+    require "plugins/lualine",
+    require "plugins/treesitter",
+    require "plugins/telescope",
+    require "plugins/lsp",
+    require "plugins/autocomplete",
+    require "plugins/vimnav"
 })
