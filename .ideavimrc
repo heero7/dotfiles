@@ -8,7 +8,30 @@ inoremap jk <ESC>
 noremap <leader>ff :action GotoFile<CR>
 nmap <leader>tn <Action>(NextTab)
 nmap <leader>tp <Action>(PreviousTab)
+nmap <leader>tx <Action>(CloseEditor)
 nmap <C-f> <Action>(Find)
+nmap <leader>bs <Action>(BuildWholeSolutionAction)
+nmap <leader>bd <Action>(Debug)
+nmap <leader>bp <Action>(Run)
+nmap <leader>sv <Action>(SplitVertically)
+nmap <leader>sh <Action>(SplitHorizontally)
+nmap <leader>eo <Action>(ActivateProjectToolWindow)
+nmap <leader>ex <Action>(HideActiveWindow)
+
+
+" Refactoring
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+" Go to code
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
