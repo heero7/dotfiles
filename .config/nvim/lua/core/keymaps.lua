@@ -13,9 +13,10 @@ vim.keymap.set("i", "jk", "<Esc>", opts)
 vim.keymap.set("n", "x", '"_x', opts)
 
 -- window splits
-vim.keymap.set("n", "<leader>sv", "<C-w>sv", opts)
-vim.keymap.set("n", "<leader>sh", "<C-w>sh", opts)
-vim.keymap.set("n", "<leader>sv", "<C-w>sx", opts)
+vim.keymap.set("n", "<leader>sv", "<C-w>v", opts)
+vim.keymap.set("n", "<leader>sh", "<C-w>h", opts)
+-- how to close split?
+--vim.keymap.set("n", "<leader>sx", "<C-w>sx", opts)
 
 -- tabs
 vim.keymap.set("n", "<leader>to", ":tabnew<C-R>", opts)

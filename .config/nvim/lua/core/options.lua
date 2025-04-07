@@ -16,3 +16,5 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 
 vim.opt.showmode = false
+
+vim.o.colorcolumn = "80"
