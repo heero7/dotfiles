@@ -124,11 +124,14 @@ return {
       --
       -- But for many setups, the LSP (`tsserver`) will work just fine
       ts_ls = {}, -- tsserver is deprecated
-      ruff = {},
       html = {},
       cssls = {},
       sqlls = {},
       jsonls = {},
+      zls = {
+          -- Zig
+          semantic_tokens = "partial",
+      },
 
       lua_ls = {
         -- cmd = {...},

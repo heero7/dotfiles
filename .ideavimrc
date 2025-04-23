@@ -6,6 +6,7 @@ let mapleader=" "
 
 inoremap jk <ESC>
 noremap <leader>ff :action GotoFile<CR>
+noremap <C-p> :action GotoFile<CR>
 nmap <leader>tn <Action>(NextTab)
 nmap <leader>tp <Action>(PreviousTab)
 nmap <leader>tx <Action>(CloseEditor)
@@ -13,10 +14,18 @@ nmap <C-f> <Action>(Find)
 nmap <leader>bs <Action>(BuildWholeSolutionAction)
 nmap <leader>bd <Action>(Debug)
 nmap <leader>bp <Action>(Run)
+nmap <leader>bx <Action>(Stop)
 nmap <leader>sv <Action>(SplitVertically)
 nmap <leader>sh <Action>(SplitHorizontally)
 nmap <leader>eo <Action>(ActivateProjectToolWindow)
 nmap <leader>ex <Action>(HideActiveWindow)
+nmap <leader>gI <Action>(GotoImplementation)
+nmap <leader>d <Action>(QuickJavaDoc)
+
+
+# settings
+set relativenumber
+
 
 
 " Refactoring
@@ -32,6 +41,9 @@ nmap <leader>gd <Action>(GotoDeclaration)
 nmap <leader>gy <Action>(GotoTypeDeclaration)
 nmap <leader>gi <Action>(GotoImplementation)
 nmap <leader>gu <Action>(ShowUsages)
+
+" Testing
+nmap <leader>rt <Action>(RiderUnitTestRunContextAction)
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the

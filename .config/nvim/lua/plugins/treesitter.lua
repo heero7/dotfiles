@@ -1,4 +1,4 @@
-  return { 
+  return {
     -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -14,11 +14,11 @@
           'yaml',
           'sql',
           'json',
-          'bash', 
-          'c', 
-          'html', 
-          'lua', 
-          'markdown', 
+          'bash',
+          'c',
+          'html',
+          'lua',
+          'markdown',
     },
       -- Autoinstall languages that are not installed
       auto_install = true,
