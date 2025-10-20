@@ -15,7 +15,15 @@ This year aiming for a more minimal approach for less to keep track of.
 - [ ] neovim 0.12 >=
 - [ ] macOS or Linux OS
 
+## Stow Commands to know
+- create links
+`stow -t $HOME .`
+- update links (in case anything needs to be re-ran)
+- undo symlinks, (something messed up) ❗️make sure to be in this repository's root dir❗️
+`stow -D -t $HOME .`
+
 ## TODO's
 - [ ] create install scripts for required packages
 - [ ] add dotnet setup
 - [ ] run in docker to check if the installation works
+- [x] get stow to work
