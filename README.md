@@ -14,3 +14,8 @@ This year aiming for a more minimal approach for less to keep track of.
 ## Requirements
 - [ ] neovim 0.12 >=
 - [ ] macOS or Linux OS
+
+## TODO's
+- [ ] create install scripts for required packages
+- [ ] add dotnet setup
+- [ ] run in docker to check if the installation works
