@@ -1,0 +1,4 @@
+desktop-notifications = false
+confirm-close-surface = false
+font-size = 24
+theme = Catppuccin Mocha
