@@ -23,7 +23,13 @@ This year aiming for a more minimal approach for less to keep track of.
 `stow -D -t $HOME .`
 
 ## TODO's
-- [ ] create install scripts for required packages
-- [ ] add dotnet setup
-- [ ] run in docker to check if the installation works
+- [x] create install scripts for required packages
+    - [x] install a package manager then all tools
+        - [x] git
+        - [x] nvim
+        - [x] tmux
+    - [x] git clone tpm into the right directory
+- [ ] test dotnet setup from ramboe
+    - [ ] add dotnet setup
+- [x] run in docker to check if the installation works
 - [x] get stow to work
