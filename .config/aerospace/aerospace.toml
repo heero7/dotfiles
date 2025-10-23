@@ -91,6 +91,10 @@ automatically-unhide-macos-hidden-apps = false
     # end tell'
     # '''
 
+    # allow alt as well for when using the zsa keyboard
+    ctrl-semicolon = "workspace-back-and-forth"
+    alt-semicolon = "workspace-back-and-forth"
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion horizontal vertical'

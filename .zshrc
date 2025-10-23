@@ -109,3 +109,7 @@ alias cde="cd ~/Code"
 alias cdc="cd ~/.config"
 alias cl="clear"
 alias ls="ls -1"
+
+# karabiner on laptop macOS
+alias kbi="sudo '/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/Applications/Karabiner-VirtualHIDDevice-Daemon.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Daemon'"
+alias kbs="sudo kanata --cfg ~/.config/kanata/kanata.kbd"

@@ -1,0 +1,20 @@
+(defcfg
+      process-unmapped-keys yes
+)
+
+(defsrc f j k d)
+
+(deflayer main @f @j @k @d)
+
+(defvar
+  tap-time 200
+  hold-time 250
+)
+
+(defalias
+  f (tap-hold $tap-time $hold-time f lctl)
+  j (tap-hold $tap-time $hold-time j rctl)
+  k (tap-hold $tap-time $hold-time k ralt)
+  d (tap-hold $tap-time $hold-time d lalt)
+)
+
