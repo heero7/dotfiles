@@ -14,9 +14,13 @@ keymap("i", "jk", "<ESC>")
 keymap("n", "<Leader>x", ":.lua<CR>")
 keymap("v", "<Leader>x", ":lua<CR>")
 keymap("n", "<Leader>sv", "<cmd>vsplit<CR>") -- Split the window vertically
-keymap("n", "<Leader>sh", "<cmd>split<xR>")  -- Split the window horizontally
+keymap("n", "<Leader>sh", "<cmd>split<CR>")  -- Split the window horizontally
 keymap("n", "<Leader>nh", "<cmd>nohl<CR>")
 keymap("n", "gd", vim.lsp.buf.definition)
 
 -- Show all mapped keys
 keymap("n", "<Leader>sc", ":map | grep <Leader><CR>")
+
+-- Show diagnostic
+keymap("n", "<Leader>d", vim.diagnostic.open_float)
+keymap("n", "<Leader>di", vim.diagnostic.setloclist)

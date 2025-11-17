@@ -1,5 +1,5 @@
 -- lsp config
-vim.lsp.enable({ "lua_ls", "ols" })
+vim.lsp.enable({ "lua_ls", "ols", "zls" })
 -- allows diagnostic words to show left of the code line
 vim.diagnostic.config({ virtual_text = true })
 

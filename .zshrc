@@ -3,13 +3,19 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.local/nvim-macos-arm64/bin:$PATH"
+# nvim
+export PATH="$HOME/.installs/tools/nvim-macos-arm64/bin:$PATH"
+# zig
+export PATH="$HOME/.installs/lang/zig-aarch64-macos-0.15.2:$PATH"
+# odin
+export PATH="$HOME/.installs/lang/Odin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,7 +115,42 @@ alias cde="cd ~/Code"
 alias cdc="cd ~/.config"
 alias cl="clear"
 alias ls="ls -1"
+alias src="source ~/.zshrc"
+
+# git
+alias glo="git log --oneline"
+
+#vim override
+alias vi="nvim"
+alias vim="nvim"
+
+#edit zshrc
+alias ez="nvim ~/.zshrc"
 
 # karabiner on laptop macOS
 alias kbi="sudo '/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/Applications/Karabiner-VirtualHIDDevice-Daemon.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Daemon'"
 alias kbs="sudo kanata --cfg ~/.config/kanata/kanata.kbd"
+
+# Source - https://stackoverflow.com/a
+# Posted by hchbaw
+# Retrieved 2025-11-11, License - CC BY-SA 3.0
+
+# redefine prompt_context for hiding user@hostname
+prompt_context () {}
+
+prompt_dir() {
+  prompt_segment blue $CURRENT_FG '%1~'
+}
+prompt_end() {
+  if [[ -n $CURRENT_BG ]]; then
+      print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+  else
+      print -n "%{%k%}"
+  fi
+
+  print -n "%{%f%}"
+  CURRENT_BG='' 
+
+  #Adds the new line and ➜ as the start character.
+  printf "\n-->";
+}
