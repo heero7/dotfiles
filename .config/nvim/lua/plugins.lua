@@ -71,6 +71,8 @@ vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory
 vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
 vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end)
 vim.keymap.set("n", "<leader>fd", telescope.find_files)
+vim.keymap.set("n", "<C-p>", telescope.find_files)
+vim.keymap.set("n", "<leader>fg", telescope.live_grep)
 -- edit neovim: find files in the neovim config from telescope
 vim.keymap.set("n", "<leader>en", open_neovim_config)
 
